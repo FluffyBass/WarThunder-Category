@@ -4,11 +4,12 @@ fetch("data/Germanhvy.json")
     const vehicleList = document.getElementById("vehicle-list");
     data.forEach((vehicle) => {
       const div = document.createElement("div");
-      div.innerHTML = `
-                <h2>${vehicle.name}</h2>
-                <h3>${vehicle.faction}</h3>
-                <h3>${vehicle.nation}</h3>
-                <h4>${vehicle.br}</h4>
+      div.innerText = `
+                ${vehicle.name}
+                ${vehicle.faction}
+                ${vehicle.nation}
+                ${vehicle.br}
+                ${vehicle.Description}
             `;
       vehicleList.appendChild(div);
     });

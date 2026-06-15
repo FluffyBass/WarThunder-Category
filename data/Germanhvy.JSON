@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Panzer VI Tiger",
+    "faction": "AXIS",
+    "nation": "Germany",
+    "br": 10,
+    "Description": "티거 1. 강력한 독일의 중전차. \n 대공포인 88mm포를 개조한 KWK 36 L/56포를 장착하여 동티어대 대부분의 \n 전차 장갑을 관통하는것이 가능합니다. 하지만, 느려서 기동전에는 매우 약합니다."
+  },
+  {
+    "name": "Panzer VII Panther",
+    "faction": "AXIS",
+    "nation": "Germany",
+    "br": 8.0
+  }
+]
