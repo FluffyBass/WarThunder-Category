@@ -1,0 +1,102 @@
+.btn_home {
+  text-align: center;
+  width: 150px;
+  font-size: 30px;
+  font-family: "Agency FB Bold";
+  display: inline-block;
+  padding: 10px 20px;
+  background: #545454;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 30px;
+  border: 1px solid #545454;
+  cursor: pointer;
+}
+.btn_Allies {
+  text-align: center;
+  width: 150px;
+  font-size: 30px;
+  font-family: "Agency FB Bold";
+  display: inline-block;
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 1px solid #1d4ed8;
+  cursor: pointer;
+}
+.btn_Comintern {
+  text-align: center;
+  width: 150px;
+  font-size: 30px;
+  font-family: "Agency FB Bold";
+  display: inline-block;
+  padding: 10px 20px;
+  background: #9f0000;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 1px solid #9f0000;
+  cursor: pointer;
+}
+.btn_ThirdWorlds {
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  font-size: 30px;
+  font-family: "Agency FB Bold";
+  display: inline-block;
+  padding: 10px 20px;
+  background: #006400;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 1px solid #006400;
+  cursor: pointer;
+}
+.btn_Axis {
+  text-align: center;
+  width: 150px;
+  font-size: 30px;
+  font-family: "Agency FB Bold";
+  display: inline-block;
+  padding: 10px 20px;
+  background: #000000;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+#btn_container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn_logo {
+  text-align: center;
+  width: 300px;
+  font-size: 60px;
+  font-family: "Agency FB Bold";
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  background: #ffffff;
+  color: rgb(79, 79, 79);
+  text-decoration: none;
+  border-radius: 30px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+@font-face {
+  text-align: center;
+  width: 150px;
+  font-family: "Agency FB Bold";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("Agency FB Bold"),
+    url("AGENCYB.woff") format("woff");
+}
