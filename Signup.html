@@ -2,19 +2,46 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <title>Signup</title>
+    <title>War Thunder Category</title>
     <link rel="stylesheet" href="/style/login.css" />
-    <script src="/script/login.js"></script>
   </head>
-
   <body>
-    <div class="login-container">
-      <div class="login-card">
-        <h1>SIGNUP</h1>
-        <input type="text" placeholder="Username" />
-        <input type="password" placeholder="Password" />
-        <button>SIGNUP</button>
+    <div class="container">
+      <h1>WAR THUNDER CATEGORY</h1>
+
+      <div class="top-bar">
+        <div class="toggle-container">
+          <span>TOGGLE DARK MODE</span>
+          <button class="toggle-switch"></button>
+        </div>
+        <div class="language-container">
+          <span>LANGUAGE</span>
+          <select>
+            <option>KOREAN</option>
+            <option>ENGLISH</option>
+          </select>
+        </div>
       </div>
+
+      <hr />
+
+      <h2>SIGN UP</h2>
+      <form>
+        <input type="email" placeholder="EMAIL:" />
+        <input type="password" placeholder="PASSWORD:" />
+      </form>
+
+      <div class="social-login">
+        <p>
+          SIGN UP WITH GOOGLE
+          <img
+            src="https://cdn-icons-png.flaticon.com/24/2991/2991148.png"
+            alt="Google"
+          />
+        </p>
+      </div>
+
+      <p class="signin-link">SIGN IN</p>
     </div>
   </body>
 </html>
