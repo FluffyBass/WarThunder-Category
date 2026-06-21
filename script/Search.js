@@ -36,7 +36,6 @@ function renderTable() {
       (br === "10-12" && brValue >= 10 && brValue <= 12);
     let matchRank = !rank || item.rank.toString() === rank;
     let matchNation = !nation || item.nation === nation;
-
     if (matchBR && matchRank && matchNation) {
       let row = `<tr>
         <td>${item.name}</td>
