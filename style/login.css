@@ -6,6 +6,7 @@ body {
   justify-content: center;
   padding-top: 50px;
   background-color: #f9f9f9;
+  margin-left: 140px;
 }
 
 .container {
@@ -63,4 +64,36 @@ input {
   color: #888;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.google-login {
+  display: inline-block;
+  text-align: center;
+  font-family: "Agency FB Bold";
+  color: #000;
+  text-decoration: none;
+}
+
+#line {
+  border: 0;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+#WTC {
+  margin-top: 60px;
+  font-size: 30px;
+}
+
+@font-face {
+  text-align: center;
+  width: 150px;
+  font-family: "Agency FB Bold";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("Agency FB Bold"),
+    url("AGENCYB.woff") format("woff");
 }

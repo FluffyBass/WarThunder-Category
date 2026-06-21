@@ -1,0 +1,166 @@
+.hero {
+  width: 1520px;
+  height: 290px;
+  background: linear-gradient(
+    90deg,
+    #ff0000 0%,
+    #00ff4c 50%,
+    #4400ff 60%,
+    #525252 80%
+  );
+
+  align-items: center;
+  display: flex;
+} /*워썬더 사진 뒤편의 그라데이션 구현*/
+
+#Mainimg {
+  display: block;
+  width: 820px;
+  height: 250px;
+  margin-bottom: 10px;
+  margin-left: 350px;
+  border-radius: 50px;
+}
+/*카드 컨테이너로 모든 카드들을 감쌈.*/
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+/*카드 스타일*/
+.card-CCCP {
+  font-family: "Agency FB Bold";
+  height: 200px;
+  display: block;
+  background-color: #ffe4e1;
+  border: 2px solid red;
+  border-radius: 20px;
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.card-CCCP:hover {
+  transform: translateY(-3px);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-CCCP h2 {
+  margin-top: 0;
+  color: #b22222;
+  text-align: center;
+}
+
+.card-btn {
+  margin: 8px 0;
+  font-size: 25px;
+}
+
+.card-ALLIES {
+  display: block;
+  background-color: #80bfff;
+  border: 2px solid blue;
+  border-radius: 20px;
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  margin: 10px;
+  font-family: "Agency FB Bold";
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.card-ALLIES:hover {
+  transform: translateY(-3px);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-ALLIES h2 {
+  margin-top: 0;
+  color: #2250b2;
+  text-align: center;
+}
+
+.card-Axis {
+  font-family: "Agency FB Bold";
+  height: 200px;
+  display: block;
+  background-color: #a3a3a3;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.card-Axis:hover {
+  transform: translateY(-3px);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-Axis h2 {
+  margin-top: 0;
+  color: #000000;
+  text-align: center;
+}
+
+.card-ThirdWorlds {
+  font-family: "Agency FB Bold";
+  height: 200px;
+  display: block;
+  background-color: #7fde62;
+  border: 2px solid rgb(1, 187, 29);
+  border-radius: 20px;
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.card-ThirdWorlds:hover {
+  transform: translateY(-3px);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-ThirdWorlds h2 {
+  margin-top: 0;
+  color: #4c873a;
+  text-align: center;
+}
+
+@font-face {
+  text-align: center;
+  width: 150px;
+  font-family: "Agency FB Bold";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("Agency FB Bold"),
+    url("AGENCYB.woff") format("woff");
+}
