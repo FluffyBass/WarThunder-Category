@@ -8,32 +8,29 @@ let equipmentData = [
   { name: "메르카바 Mk4", br: 11.0, rank: 7, nation: "이스라엘" },
   { name: "반드카논 1", br: 7.0, rank: 4, nation: "스웨덴" },
   { name: "ZTZ-99", br: 11.0, rank: 7, nation: "중국" },
-];
+]; //데이터들 저장하기
 renderTable();
 
 async function loadData() {
   const response = await fetch("mains.json");
   equipmentData = await response.json();
   renderTable();
-}
+} //main.json에서 데이터 가지고와서 목록 업데이트 하기(사실 나중에 추가할거고, 지금은 추가 안함.)
 
 function renderTable() {
-  const br = document.getElementById("brFilter").value;
+  const br = document.getElementById("brFilter").value;  //변수들 불러오기(id로 정한것에서)
   const rank = document.getElementById("rankFilter").value;
   const nation = document.getElementById("nationFilter").value;
-
-  const tbody = document.querySelector("#dataTable tbody");
+  const tbody = document.querySelector("#dataTable tbody"); //id가 dataTable에서 tbody를 빼옴=행 추가/초기화
   tbody.innerHTML = "";
-
   equipmentData.forEach((item) => {
     let brValue = parseFloat(item.br);
-
     let matchBR =
       !br ||
       (br === "1-3" && brValue >= 1 && brValue <= 3) ||
       (br === "4-6" && brValue >= 4 && brValue <= 6) ||
       (br === "7-9" && brValue >= 7 && brValue <= 9) ||
-      (br === "10-12" && brValue >= 10 && brValue <= 12);
+      (br === "10-12" && brValue >= 10 && brValue <= 12); //br(배틀레이팅)이 일치하는지 찾기
     let matchRank = !rank || item.rank.toString() === rank;
     let matchNation = !nation || item.nation === nation;
     if (matchBR && matchRank && matchNation) {
@@ -42,7 +39,7 @@ function renderTable() {
         <td>${item.br}</td>
         <td>${item.rank}</td>
         <td>${item.nation}</td>
-      </tr>`;
+      </tr>`; // 각각의 값 넣기
       tbody.innerHTML += row;
     }
   });
