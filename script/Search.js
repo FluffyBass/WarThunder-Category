@@ -18,10 +18,10 @@ async function loadData() {
 } //main.json에서 데이터 가지고와서 목록 업데이트 하기(사실 나중에 추가할거고, 지금은 추가 안함.)
 
 function renderTable() {
-  const br = document.getElementById("brFilter").value;  //변수들 불러오기(id로 정한것에서)
+  const br = document.getElementById("brFilter").value; //변수들 불러오기(id로 정한것에서)
   const rank = document.getElementById("rankFilter").value;
   const nation = document.getElementById("nationFilter").value;
-  const tbody = document.querySelector("#dataTable tbody"); //id가 dataTable에서 tbody를 빼옴=행 추가/초기화
+  const tbody = document.querySelector("#dataTable tbody"); //id가 dataTable인 요소에서 tbody를 빼옴=행 추가/초기화
   tbody.innerHTML = "";
   equipmentData.forEach((item) => {
     let brValue = parseFloat(item.br);
