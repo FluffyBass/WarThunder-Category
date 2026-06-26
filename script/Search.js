@@ -27,10 +27,10 @@ function renderTable() {
     let brValue = parseFloat(item.br);
     let matchBR =
       !br ||
-      (br === "1-3" && brValue >= 1 && brValue <= 3) ||
-      (br === "4-6" && brValue >= 4 && brValue <= 6) ||
-      (br === "7-9" && brValue >= 7 && brValue <= 9) ||
-      (br === "10-12" && brValue >= 10 && brValue <= 12); //br(배틀레이팅)이 일치하는지 찾기
+      (br === "1-3" && brValue >= 1 && brValue < 4) ||
+      (br === "4-6" && brValue >= 4 && brValue < 7) ||
+      (br === "7-9" && brValue >= 7 && brValue < 10) ||
+      (br === "10-12" && brValue >= 10 && brValue < 13); //br(배틀레이팅)이 일치하는지 찾기
     let matchRank = !rank || item.rank.toString() === rank;
     let matchNation = !nation || item.nation === nation;
     if (matchBR && matchRank && matchNation) {
