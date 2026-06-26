@@ -40,8 +40,8 @@ function renderTable() {
         <td>${item.br}</td>
         <td>${item.rank}</td>
         <td>${item.nation}</td>
-      </tr>`; // 각각의 값 넣기
-      tbody.innerHTML += row;
+      </tr>`; // 각각의 값 넣기, `를 쓴 이유는 줄내림을 지원하기 위해서임.
+      tbody.innerHTML += row; // tbody에 row를 추가한 뒤 innerHTML 안의 tbody에 대입하기
     }
   });
 }
